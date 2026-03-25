@@ -1,0 +1,76 @@
+/* Remove default navbar border radius */
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    border: 1px solid #000;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Mobile dropdown menu styling */
+.navbar-collapse {
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+}
+
+.navbar-nav li a {
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-nav li:last-child a {
+    border-bottom: none;
+}
+
+/* Tall section styling */
+.tall-section {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    height: 1000px;
+    overflow-y: auto;
+}
+
+.menu-item {
+    background-color: #f0f0f0;
+}
+
+.menu-item h3 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.menu-item p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .navbar-collapse {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+/* Desktop view - ensure dropdown is not visible */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+}
+
+/* Tablet and desktop view - ensure content is readable */
+@media (min-width: 768px) {
+    .tall-section {
+        height: auto;
+        min-height: 800px;
+    }
+}
